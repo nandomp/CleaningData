@@ -99,9 +99,9 @@ The raw data sets are processed with the script run_analysis.R script to create 
 
 The tidy data set contains the following variable (in bold):
 
-    1. [NUMERIC] an identifier of the **subject** who carried out the experiment (Subject). Its range is from 1 to 30.
-    2. [NOMINAL] a descriptive label for the **activity** carried out. Values include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-    3. [NUMERIC] mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value, 66 values). Variables include: 
+- [NUMERIC] an identifier of the **subject** who carried out the experiment (Subject). Its range is from 1 to 30.
+- [NOMINAL] a descriptive label for the **activity** carried out. Values include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+- [NUMERIC] mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value, 66 values). Variables include: 
 	
 
-The data set is written to the file 'stidyData.txt'.
+The data set is written to the file 'tidyData.txt'.
