@@ -29,23 +29,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
@@ -88,12 +88,12 @@ The raw data sets are processed with the script run_analysis.R script to create 
 
 3. **Uses descriptive activity names to name the activities in the data set**: A new column is added to intermediate data set with the activity description. Changes:
 
-- 1 = WALKING
-- 2 = WALKING_UPSTAIRS
-- 3 = WALKING_DOWNSTAIRS
-- 4 = SITTING
-- 5 = STANDING
-- 6 = LAYING
+  - 1 = WALKING
+  - 2 = WALKING_UPSTAIRS
+  - 3 = WALKING_DOWNSTAIRS
+  - 4 = SITTING
+  - 5 = STANDING 
+  - 6 = LAYING
 
 
 4. **Appropriately labels the data set with descriptive variable names**: Labels given from the original data are changed to get valid/more descriptive R names. Changes:
