@@ -49,31 +49,31 @@ fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+- mean(): Mean value
+- std(): Standard deviation
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
@@ -86,9 +86,29 @@ The raw data sets are processed with the script run_analysis.R script to create 
 
 2. **Extract mean and standard deviation for each measurement**: Keep only the values of estimated mean and standard deviation .
 
-3. **Uses descriptive activity names to name the activities in the data set**: A new column is added to intermediate data set with the activity description.
+3. **Uses descriptive activity names to name the activities in the data set**: A new column is added to intermediate data set with the activity description. Changes:
 
-4. **Appropriately labels the data set with descriptive variable names**: Labels given from the original data are changed to get valid/more descriptive R names
+- 1 = WALKING
+- 2 = WALKING_UPSTAIRS
+- 3 = WALKING_DOWNSTAIRS
+- 4 = SITTING
+- 5 = STANDING
+- 6 = LAYING
+
+
+4. **Appropriately labels the data set with descriptive variable names**: Labels given from the original data are changed to get valid/more descriptive R names. Changes:
+
+
+  - Delete "()"
+  - Change initial "f" by "frequency"
+  - Change initial "t" by "time"
+  - Change "Acc" by "Accelerometer"
+  - Change "Gyro" by "Gyroscope"
+  - Change  "Mag" by "Magnitude"
+  - Change "BodyBody" by "Body"
+  - Change "_" by "."
+  
+
 
 5. **Create a tidy data set**: From the intermediate data set is created a final tidy data set where numeric variables are averaged for each activity and each subject.
 
@@ -96,12 +116,11 @@ The raw data sets are processed with the script run_analysis.R script to create 
 ##Tidy data set
 
 
-
 The tidy data set contains the following variable (in bold):
 
 - [NUMERIC] an identifier of the **subject** who carried out the experiment (Subject). Its range is from 1 to 30.
 - [NOMINAL] a descriptive label for the **activity** carried out. Values include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-- [NUMERIC] mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value, 66 values). Variables include: 
+- [NUMERIC] mean of all other variables are measurement collected from the accelerometer and gyroscope 3-axial raw signal (numeric value, 66 values).  
 	
 
 The data set is written to the file 'tidyData.txt'.
