@@ -35,5 +35,15 @@ You should create one R script called run_analysis.R that does the following:
     Download and unzip the compressed raw data into the root directory of this repository.
     Run run_analysis.R script (RStudio/R console)
 
+###Notes II
 
+This project (code) takes advantage of the R library **DPLYR** and its functions. Dplyr aims to provide a function for each basic verb of data manipulating:
+
+- filter() 
+- arrange()
+- select()
+- distinct()
+- mutate() 
+- summarise()
+- sample_n() 
 
